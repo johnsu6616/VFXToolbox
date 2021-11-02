@@ -32,7 +32,10 @@
 			};
 
 			sampler2D _MainTex;
+						CBUFFER_START(UnityPerMaterial)
 			float4 _KernelAndSize;
+			CBUFFER_END
+
 
 			v2f vert (appdata v)
 			{

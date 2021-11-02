@@ -41,7 +41,10 @@
 
 				return o;
 			}
+			CBUFFER_START(UnityPerMaterial)
 			float4 _CC;
+			CBUFFER_END
+
 
 			fixed4 frag (v2f i) : SV_Target
 			{

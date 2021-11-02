@@ -31,7 +31,10 @@
 			};
 
 			sampler2D _MainTex;
+						CBUFFER_START(UnityPerMaterial)
 			int _Mode;
+			CBUFFER_END
+
 
 			v2f vert (appdata v)
 			{

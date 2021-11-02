@@ -55,13 +55,22 @@
 			float4 _FrameData;
 			float4 _FlipbookData;
 
+			CBUFFER_START(UnityPerMaterial)
 			float _Orientation;
 			float _GrazingAngle;
-			float4 _BaseColor;
-			float4 _LightColor;
 			float _LightBrightness;
 			float _LightExponent;
+			float4 _BaseColor;
+			float4 _LightColor;
 			float4 _AmbientColor;
+			CBUFFER_END
+
+
+
+
+
+
+
 
 			v2f vert (appdata v)
 			{

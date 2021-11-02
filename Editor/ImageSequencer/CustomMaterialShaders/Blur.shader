@@ -50,9 +50,11 @@
 			float4 _FrameData;
 			float4 _FlipbookData;
 			
+			CBUFFER_START(UnityPerMaterial)
 			float _Radius;
 			int _ApplyBlur;
-
+			CBUFFER_END
+			
 			v2f vert (appdata v)
 			{
 				v2f o;

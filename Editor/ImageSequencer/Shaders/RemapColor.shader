@@ -32,8 +32,12 @@ Shader "Hidden/VFXToolbox/ImageSequencer/RemapColor"
 	};
 
 	sampler2D _MainTex;
+	
 	sampler2D _Gradient;
+				CBUFFER_START(UnityPerMaterial)
 	int _Mode;
+			CBUFFER_END
+
 
 	v2f vert(appdata v)
 	{

@@ -31,7 +31,10 @@
 				};
 
 				sampler2D _MainTex;
+				
+				CBUFFER_START(UnityPerMaterial)
 				float4 _Rect;
+				CBUFFER_END
 				
 				v2f vert (appdata_t v)
 				{

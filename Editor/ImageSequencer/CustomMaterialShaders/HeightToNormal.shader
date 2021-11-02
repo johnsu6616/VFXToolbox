@@ -55,12 +55,21 @@
 			float4 _FrameData;
 			float4 _FlipbookData;
 
+			
+
+
+			
+			CBUFFER_START(UnityPerMaterial)
+			int _NumSamples;
 			int _HeightSource;
 			int _AlphaChannel;
-			int _NumSamples;
 			float _HeightScale;
-			float _Radius;
 			float _Spherize;
+			float _Radius;
+			CBUFFER_END
+			
+
+
 
 			v2f vert (appdata v)
 			{

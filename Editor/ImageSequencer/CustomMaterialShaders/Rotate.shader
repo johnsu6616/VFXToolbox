@@ -50,8 +50,10 @@
 			float4 _FrameData;
 			float4 _FlipbookData;
 
+			CBUFFER_START(UnityPerMaterial)
 			float _Angle;
 			float2 _RotationCenter;
+			CBUFFER_END
 
 			v2f vert (appdata v)
 			{

@@ -33,7 +33,11 @@
 
 			sampler2D _MainTex;
 			sampler2D _AltTex;
+			
+			CBUFFER_START(UnityPerMaterial)
 			float _BlendFactor;
+			CBUFFER_END
+
 
 			v2f vert (appdata v)
 			{
