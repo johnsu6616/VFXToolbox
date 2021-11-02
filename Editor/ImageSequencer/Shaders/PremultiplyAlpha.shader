@@ -33,11 +33,10 @@
 
 	sampler2D _MainTex;
 
-				CBUFFER_START(UnityPerMaterial)
-					int _RemoveAlpha;
+	CBUFFER_START(UnityPerMaterial)
+	int _RemoveAlpha;
 	float _AlphaValue;
-			CBUFFER_END
-
+	CBUFFER_END
 
 	v2f vert(appdata v)
 	{

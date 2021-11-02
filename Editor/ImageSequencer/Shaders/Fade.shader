@@ -33,7 +33,7 @@
 
 			sampler2D _MainTex;
 
-						CBUFFER_START(UnityPerMaterial)
+			CBUFFER_START(UnityPerMaterial)
 			float4 _FadeToColor;
 			float _Ratio;
 			CBUFFER_END

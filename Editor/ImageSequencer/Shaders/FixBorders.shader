@@ -34,13 +34,13 @@
 			};
 
 			sampler2D _MainTex;
-						CBUFFER_START(UnityPerMaterial)
+			
+			CBUFFER_START(UnityPerMaterial)
 			float4 _FixFactors;
 			float4 _FadeToColor;
 			float _FadeToAlpha;
 			float _Exponent;
 			CBUFFER_END
-
 
 			v2f vert (appdata v)
 			{

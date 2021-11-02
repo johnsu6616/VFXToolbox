@@ -36,11 +36,11 @@
 	sampler2D _MainTex;
 	sampler2D _AlphaCurve;
 	
-			CBUFFER_START(UnityPerMaterial)
+	CBUFFER_START(UnityPerMaterial)
 	float _Brightness;
 	float _Contrast;
 	float _Saturation;
-			CBUFFER_END
+	CBUFFER_END
 
 
 	v2f vert(appdata v)

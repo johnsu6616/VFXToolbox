@@ -32,7 +32,7 @@
 
 			sampler2D _MainTex;
 			
-						CBUFFER_START(UnityPerMaterial)
+			CBUFFER_START(UnityPerMaterial)
 			float4 _CropFactors;
 			CBUFFER_END
 

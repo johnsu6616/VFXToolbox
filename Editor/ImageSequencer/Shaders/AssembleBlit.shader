@@ -41,6 +41,7 @@
 
 				return o;
 			}
+			
 			CBUFFER_START(UnityPerMaterial)
 			float4 _CC;
 			CBUFFER_END

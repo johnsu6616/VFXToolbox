@@ -40,9 +40,12 @@
 			}
 			
 			sampler2D _MainTex;
+
+			CBUFFER_START(UnityPerMaterial)
 			float4 _RGBAMask;
 			float _MipMap;
-
+			CBUFFER_END
+			
 			fixed4 frag (v2f i) : SV_Target
 			{
 				fixed4 col = tex2Dlod(_MainTex, float4(i.uv,0.0f,_MipMap));

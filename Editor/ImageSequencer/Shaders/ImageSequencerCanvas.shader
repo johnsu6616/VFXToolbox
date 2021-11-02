@@ -41,11 +41,10 @@
 			
 			sampler2D _MainTex;
 
-						CBUFFER_START(UnityPerMaterial)
+			CBUFFER_START(UnityPerMaterial)
 			float4 _RGBAMask;
 			float _MipMap;
 			CBUFFER_END
-
 
 			fixed4 frag (v2f i) : SV_Target
 			{
