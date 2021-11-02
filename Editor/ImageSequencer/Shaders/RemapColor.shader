@@ -14,10 +14,10 @@ Shader "Hidden/VFXToolbox/ImageSequencer/RemapColor"
 		Pass
 	{
 		CGPROGRAM
-#pragma vertex vert
-#pragma fragment frag
+	#pragma vertex vert
+	#pragma fragment frag
 
-#include "UnityCG.cginc"
+	#include "UnityCG.cginc"
 
 	struct appdata
 	{
@@ -57,21 +57,48 @@ Shader "Hidden/VFXToolbox/ImageSequencer/RemapColor"
 				g = LinearToGammaSpaceExact(g);
 			}
 		}
+
 		else
 		{
+			/*
 			switch (_Mode)
 			{
-				case 2:	g = input.a; break;
-				case 3:	g = input.r; break;
-				case 4:	g = input.g; break;
-				case 5:	g = input.b; break;
+				case 2:	g = input.a; 
+				break;
+				case 3:	g = input.r; 
+				break;
+				case 4:	g = input.g; 
+				break;
+				case 5:	g = input.b; 
+				break;
 			}
-
+			*/
+			
+			if(_Mode ==2)
+			{
+			g = input.a;
+			}
+			
+			if(_Mode ==3)
+			{
+			g = input.r;
+			}
+			
+			if(_Mode ==4)
+			{
+			g = input.g;
+			}
+			
+			if(_Mode ==5)
+			{
+			g = input.b;
+			}
+			
 		}
 
 		return tex2Dlod(_Gradient, float4(g, 0, 0, 0));
 	}
 		ENDCG
-	}
+		}
 	}
 }
