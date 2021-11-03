@@ -1,3 +1,8 @@
+加上自己的位置，可以實驗性的編輯，
+"com.unity.vfx-toolbox": "https://github.com/johnsu6616/VFXToolbox.git#2.0.0-preview"
+要在這邊的位置加上上述的網址，就可以讀到工具資料
+\Packages\manifest.json
+
 # VFXToolbox
 Additional tools for Visual Effect Artists.
 
